@@ -1,0 +1,48 @@
+<app-header></app-header>
+<h2>Funkcjonalności</h2>
+<div class="board">
+  
+  <div class="column">
+    <h2>To-Do</h2>
+    <div class="divider"></div>
+    <div class="square-component">
+      <div *ngFor="let function of todoFunctions">
+        <app-functionality-model [model]="function"></app-functionality-model>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <h2>Doing</h2>
+    <div class="divider"></div>
+    <div class="square-component">
+      <div *ngFor="let function of doingFunctions">
+        <app-functionality-model [model]="function"></app-functionality-model>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <h2>Done</h2>
+    <div class="divider"></div>
+    <div class="square-component">
+      <div *ngFor="let function of doneFunctions">
+        <app-functionality-model [model]="function"></app-functionality-model>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <h2>Add New Functionality</h2>
+    <div class="divider"></div>
+    <div class="square-component">
+      <form (ngSubmit)="addFunctionality()">
+        <div class="input-container">
+          <input type="text" placeholder="Title" [formControl]="title" required>
+          <input placeholder="Description" [formControl]="description" required>
+          <input type="text" placeholder="User" [formControl]="user" required>
+        </div>
+        <div class="button-container">
+          <button type="submit">Add</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

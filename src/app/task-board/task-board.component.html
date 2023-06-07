@@ -1,0 +1,48 @@
+<app-header></app-header>
+<h2>Tasks</h2><button type="button" (click)="return()">Return</button>
+<div class="board">
+  
+  <div class="column">
+    <h2>To-Do</h2>
+    <div class="divider"></div>
+    <div class="square-component">
+      <div *ngFor="let task of todoTasks">
+        <app-task-model [model]="task"></app-task-model>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <h2>Doing</h2>
+    <div class="divider"></div>
+    <div class="square-component">
+      <div *ngFor="let task of doingTasks">
+        <app-task-model [model]="task"></app-task-model>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <h2>Done</h2>
+    <div class="divider"></div>
+    <div class="square-component">
+      <div *ngFor="let task of doneTasks">
+        <app-task-model [model]="task"></app-task-model>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <h2>Add New Task</h2>
+    <div class="divider"></div>
+    <div class="square-component">
+      <form (ngSubmit)="addTask()">
+        <div class="input-container">
+          <input type="text" placeholder="Title" [formControl]="title" required>
+          <input placeholder="Description" [formControl]="description" required>
+          <input type="text" placeholder="User" [formControl]="user" required>
+        </div>
+        <div class="button-container">
+          <button type="submit">Add</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

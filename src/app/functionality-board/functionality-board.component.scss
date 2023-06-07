@@ -1,0 +1,73 @@
+.board {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.column h2 {
+  text-align: center;
+}
+
+.divider {
+  height: 2px;
+  background-color: #ccc;
+  margin: 10px 0;
+}
+
+.square-component {
+  width: auto;
+  height: auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.model-title-text {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.model-toggle-button {
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.column .input-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.column .input-container input {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.button-container button {
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+

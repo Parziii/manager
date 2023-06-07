@@ -1,0 +1,95 @@
+.model-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .model-title {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .model-details {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .model-description {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .model-info {
+    margin-bottom: 10px;
+  }
+  
+  .model-user {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .model-project-id,
+  .model-state-id {
+    margin-right: 10px;
+  }
+  
+  .model-actions {
+    display: flex;
+  }
+  
+  .model-action-button {
+    background-color: #ccc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .model-title-text {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .model-toggle-button {
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  .model-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .model-detail {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .model-detail-title {
+    font-weight: bold;
+  }
+  
+  .model-detail-content {
+    margin-top: 5px;
+  }
+  
+  .model-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  

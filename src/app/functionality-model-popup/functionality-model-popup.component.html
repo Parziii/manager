@@ -1,0 +1,27 @@
+<h2>Edit Function</h2>
+<form (ngSubmit)="saveChanges()" #editForm="ngForm">
+  <div>
+    <label>Title:</label>
+    <input type="text" name="title" [(ngModel)]="editedModel.title" required>
+  </div>
+  <div>
+    <label>Description:</label>
+    <textarea name="description" [(ngModel)]="editedModel.description" required></textarea>
+  </div>
+  <div>
+    <label>Priority:</label>
+    <input type="number" name="priority" [(ngModel)]="editedModel.priority" required>
+  </div>
+  <div>
+    <label>State:</label>
+    <select name="stateId" [(ngModel)]="editedModel.stateId">
+      <option value="1">To-Do</option>
+      <option value="2">Doing</option>
+      <option value="3">Done</option>
+    </select>
+  </div>
+  <div class="modal-buttons">
+    <button type="button" (click)="cancel()">Cancel</button>
+    <button type="submit" [disabled]="!editForm.valid">Save Changes</button>
+  </div>
+</form>

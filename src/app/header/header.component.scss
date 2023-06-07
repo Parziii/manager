@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 10px;
+  }
+  
+  .left-section {
+    flex: 1;
+  }
+  
+  .app-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .right-section {
+    text-align: right;
+  }
+  
+  .user-name {
+    font-size: 18px;
+  }
+  

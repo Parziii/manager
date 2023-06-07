@@ -1,0 +1,32 @@
+<div class="model-container">
+    <div class="model-title" (click)="toggleDetails()">
+        <span class="model-title-text" [ngClass]="{'bold': isDetailsVisible}">{{ model.title }}</span>
+        <button class="model-toggle-button">{{ isDetailsVisible ? 'Collapse Details' : 'Expand Details' }}</button>
+      </div>      
+      <div class="model-details" *ngIf="isDetailsVisible">
+        <div class="model-detail">
+          <div class="model-detail-title">Description:</div>
+          <div class="model-detail-content">{{ model.description }}</div>
+        </div>
+        <div class="model-detail">
+          <div class="model-detail-title">User:</div>
+          <div class="model-detail-content">{{ model.user }}</div>
+        </div>
+        <div class="model-detail">
+          <div class="model-detail-title">Project ID:</div>
+          <div class="model-detail-content">{{ model.projectId }}</div>
+        </div>
+        <div class="model-detail">
+          <div class="model-detail-title">State ID:</div>
+          <div class="model-detail-content">{{ model.stateId }}</div>
+        </div>
+        <div class="model-detail">
+          <div class="model-detail-title">Priority:</div>
+          <div class="model-detail-content">{{ model.priority }}</div>
+        </div>
+        <div class="model-actions">
+          <button class="model-action-button" (click)="editTask()">Edit</button>
+          <button class="model-action-button" (click)="deleteTask()">Delete</button>
+        </div>
+      </div>
+</div>
